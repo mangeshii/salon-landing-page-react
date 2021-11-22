@@ -1,11 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crete+Round&family=Playfair+Display&family=Roboto:wght@300&family=Rubik&family=Varela&family=Varela+Round&family=Work+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crete+Round&family=Playfair+Display&family=Roboto:wght@300&family=Rubik&family=Varela&family=Varela+Round&family=Work+Sans:wght@300&display=swap");
 
-.carousel{
-    height:100vh;
-    font-family: 'Playfair Display', serif;
+.carousel {
+    height: 100vh;
+    font-family: "Playfair Display", serif;
+    position: relative;
 }
-.slider-img{
-    height:100vh;
+.slider-img {
+    height: 100vh;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+.carousel-item {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    ) !important;
+}
+.slider-text {
+    z-index: 20;
+    position: absolute;
+    top: 41%;
+    left: 18%;
+    max-width: 45rem;
+    animation: transition-up-down 0.6s;
+}
+.carousel-text {
+    z-index: 20;
+    color: white;
+    font-size: 4.5rem;
+    line-height: 5rem;
+}
+.buy-now-btn {
+    background-color: #e52e71;
+    border: none;
+    padding: 0.7rem 2.1rem;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    animation: zoomIn 1.4s;
+}
+.nav-wrapper{
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    height:90px;
+    background-color: transparent;
+    color:white
+
+}
+.nav-wrapper.active{
+    background-color:white;
+    color:black !important;
+
+}
+nav{
+    width:70%;
+    margin: auto;
+}
+.logo{
+    position: fixed;
+    font-size: 2rem;
+    margin: 16px 36px;
+    float:left
+}
+nav ul{
+    overflow: hidden;
+    text-align: end;
+    transition: 1s;
+    list-style: none;
+    padding:0;
+    margin:0
+}
+nav ul li{
+    display: inline-block;
+    padding:30px;
+
+}
+
+@keyframes transition-up-down {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1600px) {
+    .slider-text {
+        left: 15%;
+    }
+}
+@media only screen and (max-width: 1450px) {
+    .slider-text {
+        left: 12%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .slider-text {
+        left: 9%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .slider-text {
+        left: 5%;
+        max-width: 35rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .slider-text {
+        left: 2%;
+        max-width: 28rem;
+    }
 }
