@@ -41,42 +41,59 @@
     margin-top: 1rem;
     animation: zoomIn 1.4s;
 }
-.nav-wrapper{
+.nav-wrapper {
     position: fixed;
     z-index: 1;
-    width:100%;
-    height:90px;
+    width: 100%;
+    height: 110px;
     background-color: transparent;
-    color:white
-
+    color: white;
 }
-.nav-wrapper.active{
-    background-color:white;
-    color:black !important;
-
+.nav-wrapper.active {
+    background-color: white;
+    animation: header-up-down 1s;
+    color: black;
 }
-nav{
-    width:70%;
+.nav-wrapper.active .logo h1 {
+    color: #e52e71;
+}
+nav {
+    width: 70%;
     margin: auto;
 }
-.logo{
+.logo {
     position: fixed;
-    font-size: 2rem;
-    margin: 16px 36px;
-    float:left
+    margin: 6px 36px;
+    float: left;
 }
-nav ul{
+.logo h1 {
+    font-size: 3.6rem;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+}
+
+.menu {
+    display: block;
+}
+nav ul {
     overflow: hidden;
     text-align: end;
     transition: 1s;
     list-style: none;
-    padding:0;
-    margin:0
+    padding: 0;
+    margin: 0;
 }
-nav ul li{
+nav ul li {
     display: inline-block;
-    padding:30px;
+    padding: 40px 30px;
+}
 
+.mobile-menu-icon {
+    display: none;
+}
+.active,
+li:hover {
+    color: #e52e71;
 }
 
 @keyframes transition-up-down {
@@ -99,9 +116,14 @@ nav ul li{
         opacity: 1;
     }
 }
-
-
-
+@keyframes header-up-down {
+    from {
+        transform: translateY(-35px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
 
 @media only screen and (max-width: 1600px) {
     .slider-text {
@@ -124,6 +146,60 @@ nav ul li{
         max-width: 35rem;
     }
 }
+@media only screen and (max-width: 780px) {
+    nav {
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        font-size: 3rem;
+        float: right;
+        text-align: end;
+        color: white;
+        top: 20%;
+        right: 12%;
+    }
+    nav ul li {
+        display: block;
+        color: white;
+        width: 100%;
+        transition: all 0.5s ease;
+        background-color: white;
+        color: black;
+        text-align: start;
+        padding: 10px 30px;
+        font-size: 1.6rem;
+    }
+    .nav-hamburger {
+        margin-top: 9.5rem;
+        height: fit-content;
+        padding: 0%;
+        margin-left: 2rem;
+        transition: 0.6s ease-in-out;
+        animation: header-up-down 1s;
+    }
+    .logo {
+        margin: 0px;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .mobile-menu-icon.active {
+        background-color: white;
+        color: #e52e71;
+    }
+    .buy-now-btn {
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .slider-text {
         left: 2%;
