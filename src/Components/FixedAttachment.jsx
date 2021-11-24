@@ -6,7 +6,7 @@ const WhatClientSays = () => {
         <div className="fixed-image-wrapper">
             <div className="row what-client-says-wrapper ">
                 <div className="col-md-5 col-12 what-client-says-content">
-                    <div className="px-5 py-4">
+                    <div className="py-4">
                         <h1 className="header">What Client Says about Betty</h1>
                         <h6 className="content">
                             Quisque consectetur massa id ipsum soltudin
