@@ -19,7 +19,6 @@
     ) !important;
 }
 .slider-text {
-    z-index: 20;
     position: absolute;
     top: 41%;
     left: 18%;
@@ -53,6 +52,7 @@
     background-color: white;
     animation: header-up-down 1s;
     color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
 }
 .nav-wrapper.active .logo h1 {
     color: #e52e71;
