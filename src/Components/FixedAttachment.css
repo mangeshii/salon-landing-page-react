@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crete+Round&family=Playfair+Display&family=Roboto:wght@300&family=Rubik&family=Varela&family=Varela+Round&family=Work+Sans:wght@300&display=swap");
+
+.fixed-image-wrapper {
+    height: 50vh;
+    margin-bottom: 20%;
+    background: url("../Images/fixed.jpg") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    font-family: "Playfair Display", serif;
+}
+.what-client-says-wrapper {
+    max-width: 1150px;
+    margin: auto;
+    height: 100%;
+}
+.what-client-says-content {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+.header{
+    font-size: 36px;
+    color: #e52e71;
+}
+.content{
+    line-height: 26px;
+    font-size: 14px;
+    margin-top: 1.2rem;
+    letter-spacing: 0.6px;
+}

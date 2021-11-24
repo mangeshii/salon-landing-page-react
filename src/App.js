@@ -3,11 +3,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Carousel from "./Components/Carousel";
 import AboutUs from "./Components/AboutUs";
 
+
 const App = () => {
     return (
         <>
           <Carousel/>
           <AboutUs/>
+          {/* <WhatClientSays/> */}
+
         </>
     );
 };

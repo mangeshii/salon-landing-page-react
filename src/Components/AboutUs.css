@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crete+Round&family=Playfair+Display&family=Roboto:wght@300&family=Rubik&family=Varela&family=Varela+Round&family=Work+Sans:wght@300&display=swap");
 
 .about-us-wrapper {
-    height: 100vh;
     padding: 5rem 2rem;
     font-family: "Playfair Display", serif;
 }

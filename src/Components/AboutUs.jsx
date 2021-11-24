@@ -1,6 +1,7 @@
 import "./AboutUs.css";
 import dottedImg from "../Images/dots.png";
 import aboutImg from "../Images/about.jpg";
+import WhatClientSays from "./FixedAttachment"
 const AboutUs = () => {
     return (
         <>
@@ -67,6 +68,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            <WhatClientSays/>
         </>
     );
 };
