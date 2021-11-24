@@ -1,97 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crete+Round&family=Playfair+Display&family=Roboto:wght@300&family=Rubik&family=Varela&family=Varela+Round&family=Work+Sans:wght@300&display=swap");
 
-
-.about-us-wrapper{
-    height:100vh;
-    padding:5rem 2rem;
+.about-us-wrapper {
+    height: 100vh;
+    padding: 5rem 2rem;
     font-family: "Playfair Display", serif;
-
 }
-.about-us{
+.about-us {
     max-width: 1150px;
-    margin:auto;
+    margin: auto;
 }
-.about-heading{
-    color:#e52e71;
+.about-heading {
+    color: #e52e71;
     font-size: 36px;
 }
-.sub-heading{
+.sub-heading {
     font-size: 20px;
 }
-.hori-line{
-    width:15%;
-    border:.1px solid #e52e71;
+.hori-line {
+    width: 15%;
+    border: 0.1px solid #e52e71;
     margin-bottom: 2.7rem;
     margin-top: 1rem;
 }
-.ad{
-    color:#e52e71;
+.ad {
+    color: #e52e71;
     margin-bottom: 2.5rem;
     font-size: 22px;
 }
-.detail-para{
+.detail-para {
     line-height: 26px;
     font-size: 14px;
     margin-bottom: 1.9rem;
-    letter-spacing: .6px;
+    letter-spacing: 0.6px;
 }
-.img-wrapper{
+.img-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.dotted-img-wrapper{
+.dotted-img-wrapper {
     position: relative;
 }
-.dot-img{
-    height:32rem;
-    width:26rem;
+.dot-img {
+    height: 32rem;
+    width: 26rem;
 }
-.img-border{
-    border:10px solid #f5e5ed;
-    height:26.5rem;
-    width:24rem;
+.img-border {
+    border: 10px solid #f5e5ed;
+    height: 26.5rem;
+    width: 24rem;
     position: absolute;
-    top:15%;
-    left:15%
+    top: 15%;
+    left: 15%;
 }
-.about-img{
-    height:26.5rem;
+.about-img {
+    height: 26.5rem;
+    width: 92%;
     position: absolute;
-    top:8%;
-    left:8%
+    top: 8%;
+    left: 8%;
+    transition: transform 0.7s;
 }
-
-@media only screen and (max-width:767px) {
-    .img-wrapper{
+.about-img:hover {
+    transform: scale(0.95);
+}
+@media only screen and (max-width: 767px) {
+    .img-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 2%;
         max-width: 550px;
     }
-    .about-us{
+    .about-us {
         max-width: 550px;
-        margin:auto;
+        margin: auto;
     }
-    .dot-img{
-        width:85%;
-        height:44rem;
+    .dot-img {
+        width: 85%;
+        height: 44rem;
     }
-    .img-border{
-        width:80%;
-        height:82%;
+    .img-border {
+        width: 80%;
+        height: 82%;
     }
-    .about-img{
-        width:80%;
-        height:85%;
-        top:6%
+    .about-img {
+        width: 80%;
+        height: 85%;
+        top: 6%;
     }
-
 }
-@media only screen and (max-width:552px) {
-    .dot-img{
-        width:85%;
-        height:30rem;
+@media only screen and (max-width: 552px) {
+    .dot-img {
+        width: 85%;
+        height: 30rem;
     }
 }
