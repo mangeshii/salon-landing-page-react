@@ -4,6 +4,7 @@ import Carousel from "./Components/Carousel";
 import AboutUs from "./Components/AboutUs";
 import WhatClientSays from "./Components/FixedAttachment";
 import Services from "./Components/Services";
+import MakeUp from "./Components/MakeUp";
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
           <AboutUs/>
           <WhatClientSays/>
           <Services/>
+          <MakeUp/>
 
         </>
     );
