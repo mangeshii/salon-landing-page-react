@@ -55,13 +55,13 @@
     padding: 1rem;
     position: absolute;
     background-color: white;
-    /* z-index: 999; */
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     display: flex;
     align-items: center;
 }
 .con h5{
 margin-right: .7rem;
+font-size: 20px;
 }
 
 
