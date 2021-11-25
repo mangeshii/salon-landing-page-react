@@ -5,6 +5,7 @@ import AboutUs from "./Components/AboutUs";
 import WhatClientSays from "./Components/FixedAttachment";
 import Services from "./Components/Services";
 import MakeUp from "./Components/MakeUp";
+import Brands from "./Components/Brands";
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
           <WhatClientSays/>
           <Services/>
           <MakeUp/>
+          <Brands/>
 
         </>
     );
