@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crete+Round&family=Playfair+Display&family=Roboto:wght@300&family=Rubik&family=Varela&family=Varela+Round&family=Work+Sans:wght@300&display=swap");
+
+
+.makeup-wrapper{
+    height: 70vh;
+    padding: 6rem 1rem;
+    font-family: "Playfair Display", serif;
+    background-color: #fdf7fa;
+}
+.makeup-container{
+    max-width: 1150px;
+    margin: auto;
+}
+.makeup-header h1{
+    color: #e52e71;
+    font-size: 36px;
+}
+.makeup-header h5{
+    font-size: 20px !important;
+    margin-top: 0.7rem;
+}
+.hori-line {
+    width: 8%;
+}
+.ms{
+    position: relative;
+    background-color: white;
+    padding: 2rem !important;
+}
+.overlay-text{
+    position: absolute;
+    padding: 1rem;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height:0;
+    transition: .5s ease;
+    overflow: hidden;
+    background-color: white;
+}
+.ms:hover .overlay{
+    height: 100%;
+    border-bottom: 3px solid #e52e71;
+}
+.ms img{
+    height:2.5rem
+}
+.ms h5{
+    margin-top: 1rem;
+
+}
+.ms h6{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    margin-top: .7rem;
+}
